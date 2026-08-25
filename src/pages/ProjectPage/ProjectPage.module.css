@@ -1,0 +1,418 @@
+/* ProjectPage.module.css */
+
+/* ============================================
+   PAGE CONTAINER
+   ============================================ */
+.projectPage {
+  padding: 40px 0 80px;
+  background-color: var(--background);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============================================
+   BACK LINK
+   ============================================ */
+.backLink {
+  display: inline-block;
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.backLink:hover {
+  color: #c92a1a;
+  transform: translateX(-4px);
+  text-decoration: none;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.header {
+  margin-bottom: 40px;
+}
+
+.category {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.header h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 20px;
+  color: #4a4a4a;
+  line-height: 1.7;
+  max-width: 700px;
+  margin-bottom: 20px;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.techTag {
+  padding: 6px 16px;
+  background-color: #fff;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 20px;
+  border: 1px solid var(--primary);
+}
+
+.actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.primaryButton {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primaryButton:hover {
+  background-color: #c92a1a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(223, 48, 28, 0.3);
+  text-decoration: none;
+  color: #fff;
+}
+
+.secondaryButton {
+  display: inline-block;
+  padding: 12px 28px;
+  background-color: var(--secondary);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background-color: #e68200;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 145, 0, 0.3);
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ============================================
+   HERO IMAGE
+   ============================================ */
+.heroImage {
+  margin: 40px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.heroImage img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ============================================
+   LEARNING SECTION
+   ============================================ */
+.learningSection {
+  margin: 60px 0;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.sectionHeading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.eyebrow {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.sectionHeading h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.learningContent p {
+  font-size: 18px;
+  color: #4a4a4a;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+/* ============================================
+   CONCEPTS SECTION
+   ============================================ */
+.conceptsSection {
+  margin: 60px 0;
+  text-align: center;
+}
+
+.conceptsSection h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 30px;
+}
+
+.conceptGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.conceptCard {
+  background: #fff;
+  padding: 28px 20px;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--primary);
+}
+
+.conceptCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+.conceptCard span {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.conceptCard h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.conceptCard p {
+  font-size: 15px;
+  color: #4a4a4a;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ============================================
+   NEXT SECTION
+   ============================================ */
+.nextSection {
+  margin: 60px 0 40px;
+  padding: 50px 40px;
+  background-color: var(--primary);
+  text-align: center;
+  border-radius: 12px;
+}
+
+.nextSection .eyebrow {
+  color: var(--background);
+}
+
+.nextSection h2 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.backButton {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: var(--secondary);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(255, 145, 0, 0.3);
+}
+
+.backButton:hover {
+  background-color: #e68200;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(255, 145, 0, 0.4);
+  text-decoration: none;
+  color: #fff;
+}
+
+/* ============================================
+   NOT FOUND
+   ============================================ */
+.notFound {
+  max-width: 600px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFound .eyebrow {
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.notFound h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.notFound p {
+  font-size: 18px;
+  color: #4a4a4a;
+  margin-bottom: 24px;
+}
+
+.notFound .backButton {
+  background-color: var(--primary);
+}
+
+.notFound .backButton:hover {
+  background-color: #c92a1a;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .projectPage {
+    padding: 20px 0 60px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+
+  .learningSection {
+    padding: 24px;
+  }
+
+  .sectionHeading h2 {
+    font-size: 26px;
+  }
+
+  .learningContent p {
+    font-size: 16px;
+  }
+
+  .conceptsSection h2 {
+    font-size: 26px;
+  }
+
+  .conceptGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .nextSection {
+    padding: 36px 20px;
+  }
+
+  .nextSection h2 {
+    font-size: 26px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    text-align: center;
+  }
+
+  .notFound h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .techTag {
+    font-size: 12px;
+    padding: 4px 12px;
+  }
+
+  .sectionHeading h2 {
+    font-size: 22px;
+  }
+
+  .conceptCard {
+    padding: 20px 16px;
+  }
+
+  .nextSection h2 {
+    font-size: 22px;
+  }
+
+  .backButton,
+  .primaryButton,
+  .secondaryButton {
+    padding: 10px 24px;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+  }
+}

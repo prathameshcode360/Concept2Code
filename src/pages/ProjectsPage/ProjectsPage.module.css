@@ -1,0 +1,352 @@
+/* ProjectsPage.module.css */
+
+/* ============================================
+   PAGE CONTAINER
+   ============================================ */
+.projectsPage {
+  padding: 40px 0 80px;
+  background-color: var(--background);
+  min-height: 100vh;
+}
+
+/* ============================================
+   HEADER
+   ============================================ */
+.header {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 12px;
+}
+
+.header h1 span {
+  color: var(--primary);
+}
+
+.intro {
+  font-size: 18px;
+  color: #4a4a4a;
+  line-height: 1.7;
+}
+
+/* ============================================
+   PROJECTS SECTION
+   ============================================ */
+.projectsSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.categoryButton {
+  padding: 10px 24px;
+  background-color: #fff;
+  color: #4a4a4a;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.categoryButton:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.categoryButton.active {
+  background-color: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+/* Category Info */
+.categoryInfo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.categoryInfo h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 6px;
+}
+
+.categoryInfo p {
+  font-size: 17px;
+  color: #4a4a4a;
+}
+
+/* ============================================
+   PROJECTS GRID
+   ============================================ */
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 30px;
+}
+
+.projectCard {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: var(--background);
+}
+
+.projectImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.projectCard:hover .projectImage {
+  transform: scale(1.05);
+}
+
+.projectContent {
+  padding: 20px;
+}
+
+.projectContent h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.techTag {
+  padding: 4px 12px;
+  background-color: var(--background);
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 12px;
+}
+
+.projectDescription {
+  font-size: 15px;
+  color: #4a4a4a;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* ============================================
+   ACTION BUTTONS
+   ============================================ */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.detailsButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.detailsButton:hover {
+  background-color: #c92a1a;
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: #fff;
+}
+
+.detailsButton span {
+  transition: transform 0.3s ease;
+}
+
+.detailsButton:hover span {
+  transform: translateX(3px);
+}
+
+.secondaryButton {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: #f0f0f0;
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+/* ============================================
+   EMPTY STATE
+   ============================================ */
+.emptyState {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+  border-radius: 12px;
+  border: 2px dashed #e0e0e0;
+}
+
+.emptyState h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.emptyState p {
+  font-size: 16px;
+  color: #4a4a4a;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 1024px) {
+  .projectsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .projectsPage {
+    padding: 30px 0 60px;
+  }
+
+  .header h1 {
+    font-size: 34px;
+  }
+
+  .intro {
+    font-size: 16px;
+  }
+
+  .categories {
+    gap: 8px;
+  }
+
+  .categoryButton {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .categoryInfo h2 {
+    font-size: 24px;
+  }
+
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .imageWrapper {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 28px;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .intro {
+    font-size: 15px;
+  }
+
+  .categoryButton {
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+
+  .categoryInfo h2 {
+    font-size: 20px;
+  }
+
+  .categoryInfo p {
+    font-size: 15px;
+  }
+
+  .projectContent h3 {
+    font-size: 18px;
+  }
+
+  .projectDescription {
+    font-size: 14px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .detailsButton,
+  .secondaryButton {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
